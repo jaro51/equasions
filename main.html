@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            equasions
+        </title>
+        <link rel="stylesheet" href="main.css">
+        <script src="rovnice.py.js"></script>
+        <script src="eqSelection.js"></script>
+    </head>
+    <body>
+        <div id="select">
+            <button id="one" onclick="openLinea()">Lineární Rovnice</button>
+            <button id="two" onclick="openKvadr()">Kvadratická Rovnice</button>
+        </div>
+        <div id="linea">
+            <input type="text" class="A" placeholder="input A:">
+            <input type="text" class="B" placeholder="input B:">
+            <button onclick="" class="enter">Enter</button>
+        </div>
+        <div id="kvadr">
+            <input type="text" class="A" placeholder="input A:">
+            <input type="text" class="B" placeholder="input B:">
+            <input type="text" id="C" placeholder="input C:">
+            <button onclick="" class="enter">Enter</button>
+        </div>
+    </body>
+</html>
