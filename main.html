@@ -5,24 +5,33 @@
             equasions
         </title>
         <link rel="stylesheet" href="main.css">
-        <script src="rovnice.py.js"></script>
-        <script src="eqSelection.js"></script>
+        <script src="linea.js"></script>
+        <script src="kvadr.js"></script>
+        <script src="buttons.js"></script>
     </head>
     <body>
         <div id="select">
-            <button id="one" onclick="openLinea()">Lineární Rovnice</button>
-            <button id="two" onclick="openKvadr()">Kvadratická Rovnice</button>
+            <div id="buttons">
+                <button id="one" onclick="openLinea()">Lineární Rovnice</button>
+                <button id="two" onclick="openKvadr()">Kvadratická Rovnice</button>
+            </div>
+        </div>
+        <div id="box">
+            <p id="ans"></p>
         </div>
         <div id="linea">
-            <input type="text" class="A" placeholder="input A:">
-            <input type="text" class="B" placeholder="input B:">
-            <button onclick="" class="enter">Enter</button>
+            <button id="closeL" onclick="closeAll()">x</button>
+            <input type="text" id="lA" placeholder="input A:">
+            <input type="text" id="lB" placeholder="input B:">
+            <button onclick="lineaMath()" class="enter">Enter</button>
         </div>
         <div id="kvadr">
-            <input type="text" class="A" placeholder="input A:">
-            <input type="text" class="B" placeholder="input B:">
+            <button id="closeK" onclick="closeAll()">x</button>
+            <input type="text" id="kA" placeholder="input A:">
+            <input type="text" id="kB" placeholder="input B:">
             <input type="text" id="C" placeholder="input C:">
-            <button onclick="" class="enter">Enter</button>
+            <button onclick="kvadrMath()" class="enter">Enter</button>
         </div>
+        
     </body>
 </html>
