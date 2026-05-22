@@ -10,35 +10,21 @@ div {
     border-radius: 30px;
     background-color: rgb(50, 50, 50);
 }
-#select {
-    border: 8px solid rgb(45, 45, 45);
-    z-index: 1;
-    width: 80%;
-    height: 80%;
-
-}
-#select button {
-    margin-left: 50%;
-    margin-right: 50%;
+#main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: rgb(20, 20, 20);
-    width: 200px;
-    border: 3px solid rgb(25, 25, 25);
-    border-radius: 10px;
-    padding: 10px;
-    transition-duration: 1s;
-}
-#one:hover {
+    width: max-content;
+    height: max-content;
     padding: 8px;
-    border:  5px solid rgb(150, 150, 255);
-}
-#two:hover {
-    padding: 8px;
-    border:  5px solid rgb(255, 150, 150);
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 #box {
     position: fixed;
@@ -62,25 +48,11 @@ div {
     border: 2px solid rgb(150, 150, 255);
     background-color: black;
 }
-#kvadr {
-    z-index: 0;
-    border: 2px solid rgb(255, 150, 150);
-    background-color: black;
-}
 input {
     color: white;
     background-color: rgb(20, 20, 20);
     border: 2px solid black;
     border-radius: 5px;
-}
-#closeL {
-    transition-duration: 0.2s;
-    color: white;
-    position: fixed;
-    background-color: rgba(20, 20, 20, 0);
-    border: 0px;
-    right: 10px;
-    top: 10px;
 }
 #closeK {
     color: white;
@@ -89,9 +61,6 @@ input {
     border: 0px;
     right: 10px;
     top: 10px;
-}
-#closeL:hover {
-    color:red;
 }
 #closeK:hover {
     color:red;

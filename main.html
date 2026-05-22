@@ -5,33 +5,19 @@
             equasions
         </title>
         <link rel="stylesheet" href="main.css">
-        <script src="linea.js"></script>
-        <script src="kvadr.js"></script>
-        <script src="buttons.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
-        <div id="select">
-            <div id="buttons">
-                <button id="one" onclick="openLinea()">Lineární Rovnice</button>
-                <button id="two" onclick="openKvadr()">Kvadratická Rovnice</button>
-            </div>
-        </div>
         <div id="box">
             <p id="ans"></p>
         </div>
-        <div id="linea">
-            <button id="closeL" onclick="closeAll()">x</button>
-            <input type="text" id="lA" placeholder="input A:">
-            <input type="text" id="lB" placeholder="input B:">
-            <button onclick="lineaMath()" class="enter">Enter</button>
-        </div>
-        <div id="kvadr">
+        <div id="main">
             <button id="closeK" onclick="closeAll()">x</button>
+            <p>enter the equasion (if linear enter: a = 0)</p>
             <input type="text" id="kA" placeholder="input A:">
             <input type="text" id="kB" placeholder="input B:">
             <input type="text" id="C" placeholder="input C:">
-            <button onclick="kvadrMath()" class="enter">Enter</button>
+            <button onclick="Math()" class="enter">Enter</button>
         </div>
-        
     </body>
 </html>
